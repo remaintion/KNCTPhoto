@@ -1,0 +1,21 @@
+  <div class="small-6 small-centered columns">
+    Welcome to this website
+  </div>
+
+<div class=" small-5 small-centered columns">
+  <ul data-orbit class="example-orbit">
+     <% @posts.each do |p|%>
+      <li style="height:400px; overflow:hidden">
+        <%= image_tag p.photo%>
+        <div class="orbit-caption">
+          <%= p.description%>
+        </div>
+      </li>
+      <% end%>
+    </ul>
+  </div>
+
+  <div class="small-6 small-centered columns">
+    <%= link_to "Start" ,photo_show_path, :class=>"expand button"%>
+  </div>
+
