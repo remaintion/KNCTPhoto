@@ -1,21 +1,21 @@
-  <div class="small-6 small-centered columns">
-    Welcome to this website
+  <div class="small-4 small-centered columns" style="margin-top:2%; ">
+    <h4>
+    Welcome, The photo on this site has been taken by exchange program students<br><h3 align="right">Enjoy it!!
+    </h4>
   </div>
+  
 
-<div class=" small-5 small-centered columns">
-  <ul data-orbit class="example-orbit">
+<div class=" small-5 small-centered columns" >
+  <ul data-orbit class="example-orbit" >
      <% @posts.each do |p|%>
       <li style="height:400px; overflow:hidden">
         <%= image_tag p.photo%>
-        <div class="orbit-caption">
-          <%= p.description%>
-        </div>
+
       </li>
       <% end%>
     </ul>
   </div>
 
   <div class="small-6 small-centered columns">
-    <%= link_to "Start" ,photo_show_path, :class=>"expand button"%>
+    <%= link_to "Start" ,photo_show_path, :class=>"expand button",:style=>"color:white"%>
   </div>
-

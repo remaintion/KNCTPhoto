@@ -16,3 +16,52 @@
 
  */
 @import 'foundation-icons';
+
+.fi-like {
+   font-size: 80px
+}
+.fi-dislike {
+   font-size: 80px
+}
+body { 
+
+background-image:url('BG.jpg'); 
+color:white;
+h1{
+	color:white;
+}
+h2{
+	color:white;
+}
+h3{
+	color:white;
+}
+h4{
+	color:white;
+}
+h5{
+	color:#22313F;
+}
+h6{
+	color:white;
+}
+
+}
+
+
+.large-centered{
+	background:#22313F;
+	padding:10px;
+	margin-top:5%;
+}
+label{
+	color:white;
+}
+	input.red 
+{ 
+	background-color: #F00 
+}
+
+input[type="email"],textarea,input[type="email"]:focus, textarea:focus,input[type="password"],input[type="password"]:focus { 
+  background-color : #C8F7C5;
+}

@@ -32,6 +32,6 @@ class PhotoController < ApplicationController
   
 
   def index
-  	@posts = Post.all
+  	@posts = Post.order("RANDOM()").limit(5)
   end
 end
