@@ -43,6 +43,11 @@
   </fieldset>
   
   </div>
+  <%if @signin %>
+        <% if current_user.email == p.email%>
+      <p align='right'><%= link_to " Edit Post", edit_post_path(p), :class=>"fi-page-edit"%></p>
+      <% end%>
+      <%end%>
 
 </div>
   	
